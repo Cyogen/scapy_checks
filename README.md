@@ -31,3 +31,13 @@ Following is a summary of each file and how to interpret the results.
 - ```http.request.method == "POST"``` and ```http.content_length >0``` --< candidate exfil POSTs
 - ```dns.qry.name contains "."``` and ```dns.qry.name matches "[A-Za-z0-9+/=]{20,}"```
 - Use coloring rules: color DNS TXT traffic and HTTP POSTs specially to spot them visually.
+
+# decode_dns_subdomains.py
+
+```python3 decode_dns_subdomains.py results/sample_pcap/summaries/dns_queries.tsc```
+
+This script will parse DNS queries from tshark output (dns_queries.tsv).
+- It will try to detect suspicious long subdomains (likely encoded data).
+- Attempt Base64/32, and hex decoding.
+- Results will be saved in ```results/<pcap>/decoded_dns/```.
+  
