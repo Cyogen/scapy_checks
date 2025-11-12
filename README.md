@@ -1,5 +1,5 @@
 # scapy_checks
-PCAP heuristics - VERY basic automated detection
+PCAP heuristics - VERY basic automated detection, just feed it a pcap!
 
 ```
 python3 scapy_checks.py sample.pcap
