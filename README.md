@@ -41,3 +41,12 @@ This script will parse DNS queries from tshark output (dns_queries.tsv).
 - Attempt Base64/32, and hex decoding.
 - Results will be saved in ```results/<pcap>/decoded_dns/```.
   
+# Generate HTML Report
+
+This scripts will combine all your main  outputs into one clickable HTML page:
+- Summary stats
+- Top protocols, endpoints, conversations
+- HTTP requests/responses
+- DNS queries (with decoded links)
+- TLS info
+- Recovered files and decoded DNS artifacts
