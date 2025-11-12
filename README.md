@@ -2,7 +2,7 @@
 PCAP heuristics - VERY basic automated detection, just feed it a pcap!
 
 ```
-python3 scapy_checks.py sample.pcap
+python3 pcap.sh sample.pcap
 ```
 ## Output
 - A 'results' directory will be created.  Within will be a directory with the name of the PCAP analyzed.
