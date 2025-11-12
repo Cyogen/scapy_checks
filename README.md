@@ -42,6 +42,7 @@ This script will parse DNS queries from tshark output (dns_queries.tsv).
 - Results will be saved in ```results/<pcap>/decoded_dns/```.
   
 # Generate HTML Report
+```python3 generate_report.py```
 
 This scripts will combine all your main  outputs into one clickable HTML page:
 - Summary stats
